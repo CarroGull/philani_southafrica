@@ -241,7 +241,12 @@ display: none;
 }
  
 }
-
+#searchButton {
+  width: 30px;
+  margin-left: 260px;
+  margin-bottom: 3px;
+  
+}
 
 
 
