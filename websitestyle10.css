@@ -88,7 +88,6 @@
 }
 
 .searchBar {
-  position: absolute;
   margin-top: 3.5%;
   margin-left: 20px;
   width: 250px;
@@ -140,7 +139,7 @@
 /*Laptop*/ 
 { 
   .wrapper{      
-     width: 1000px; 
+     width: 95%; 
    }
 
   .parent-div 
@@ -148,33 +147,49 @@
     position: relative;
     float: left;
   }
-
+.flex-container-div {
+  flex-direction: row !important;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+#searchBarId{
+  display: none;
+}
+#searchBarImg{
+  display: none;
+}
   #videos
   {
-    width: 90%;
     display: block;   
     border-radius: 8px;
-    margin-left: 5px;
-    padding-top: 2px;
     padding-bottom: 2px;
-    margin-left: 5%;
-  }
+    }
 
   .dropbtn {
     display: none;
   }
-
+  
   .searchBar{
-    position: absolute;
     margin: 0;
     margin-top: 5px;
   }
   .searchButton{
-    left: 43.8% !important;
-    width: 2.5% !important;
+    position: relative;
+    margin-bottom: -17px;
+    margin-top: 0px !important;
+    left: 0% !important;
+    width: 45px !important;
+    height: initial !important;
     top: 0.4% !important;
   }
-
+  /* .flex-container-nav-search {
+    flex-direction: row;
+    display: flex;
+  } */
+  #navbar {
+    display: inline !important;
+  }
   #navbar ul { 
     /* margin: 0; */
     height: 55px;
@@ -207,12 +222,31 @@
 }
 
 .searchButton {
-  position: absolute;
   width: 8%;
-  left: 88%;
-  top: 2%;
+  margin-top: 12px;
+  padding-left: 3px;
+  height: 8%;
 }
-
+#navbar {
+  display: none;
+}
+.flex-container-div {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container-icon{
+  display: flex;
+  flex-direction: row;
+}
+.flex-container-search {
+  display: flex;
+  flex-direction: row;
+  /* flex: 50%; */
+}
+.flex-item-bottom {
+  flex-direction: column;
+  
+}
 .illnessText
 {      
   text-align: left;
